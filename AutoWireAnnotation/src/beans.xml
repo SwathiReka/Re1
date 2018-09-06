@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-4.2.xsd 
+http://www.springframework.org/schema/context 
+http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+<!-- configuration -->
+<context:annotation-config/>
+<bean id="name" name="empname" class="com.manipal.Name">
+<property name="fname" value="anil"></property>
+<property name="mname" value="kumar"></property>
+<property name="lname" value="gupta"></property>
+</bean>
+<bean id="address" name="add" class="com.manipal.Address">
+<property name="dno" value="10"></property>
+<property name="city" value="bangalore"></property>
+<property name="state" value="karnataka"></property>
+</bean>
+<bean id="emp" class="com.manipal.Employee">
+<property name="eno" value="10"></property>
+</bean>
+</beans>
